@@ -1,0 +1,60 @@
+/* Estilos para el Modal */
+.ReactModalPortal > div {
+  opacity: 0; /* Inicialmente, el modal tiene opacidad 0 */
+}
+
+.ReactModalPortal .ReactModal__Overlay {
+  align-items: center; /* Alineación vertical */
+  display: flex; /* Utiliza flexbox */
+  justify-content: center; /* Alineación horizontal */
+  transition: opacity 0.2s ease-in-out; /* Transición suave para la opacidad */
+  z-index: 999; /* Asegura que el modal esté por encima de otros elementos */
+}
+
+.modal-fondo {
+  background-color: rgba(0, 0, 0, 0.3); /* Fondo semi-transparente */
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  position: fixed; /* Fijar el fondo del modal en la pantalla */
+}
+
+.ReactModalPortal .ReactModal__Overlay--after-open {
+  opacity: 1; /* Opacidad completa cuando el modal está abierto */
+}
+
+.ReactModalPortal .ReactModal__Overlay--before-close {
+  opacity: 0; /* Opacidad 0 cuando el modal está cerrando */
+}
+
+.modal {
+  background: white;
+  border-radius: 5px;
+  color: rgb(51, 51, 51);
+  display: inline;
+  max-height: 620px;
+  max-width: 500px;
+  outline: none;
+  padding: 10px;
+}
+
+/* Estilos para Botones Flotantes de Acción (FAB) */
+.fab {
+  border-radius: 100%; /* Botón redondo */
+  bottom: 25px;
+  font-size: 30px;
+  padding: 25px;
+  position: fixed; /* Fijar el botón en la pantalla */
+  right: 25px;
+}
+
+.fab-danger {
+  border-radius: 100%; /* Botón redondo */
+  bottom: 25px;
+  font-size: 22px;
+  position: fixed; /* Fijar el botón en la pantalla */
+  left: 25px;
+  width: 70px;
+  height: 70px;
+}
